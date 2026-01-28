@@ -7,7 +7,7 @@ These instructions assume that 3D Visualizer was installed in its base directory
 
 1. Change into 3D Visualizer base directory by running:
     
-    ```
+    ```sh
     cd ~/src/3DVisualizer-<version>
     ```
 
@@ -15,13 +15,13 @@ These instructions assume that 3D Visualizer was installed in its base directory
 
 3. Unpack the example data tarball in the 3D Visualizer directory, using either: 
 
-    ```
+    ```sh
     tar xfz <download path>/AlaskaData.tar.gz
     ```
     
     Or: 
     
-    ```
+    ```sh
     tar xf <download path>/AlaskaData.tar
     ```
 
@@ -29,13 +29,13 @@ These instructions assume that 3D Visualizer was installed in its base directory
 
 5. To run 3D Visualizer on the example data, run either:
     
-    ```
+    ```sh
     ./bin/3DVisualizer -palette AlaskaData/slab2.pal AlaskaData/slab2.in
     ```
     
     Or (with the full command line): 
 
-    ``` 
+    ```sh
     ./bin/3DVisualizer -palette AlaskaData/slab2.pal -class MultiCitcomtFile AlaskaData/slab2.dat Temp "log(Visc)" 
     ```
 

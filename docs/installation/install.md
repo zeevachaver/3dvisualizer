@@ -1,7 +1,7 @@
 # Installation Guide
 
 ## Prerequisites
-3D Visualizer requires Vrui version 14.0 build 001 or newer. To read images in PNG, JPEG, or TIFF formats, libpng, libjpeg, or libtiff have to be installed, respectively, and Vrui has to be configured with support for these image formats (see [Vrui's README file](https://github.com/vrui-vr/vrui/blob/main/README)). To include collaboration functionality, 3D Visualizer requires the Vrui Collaboration Infrastructure version 10.3 or newer.
+3D Visualizer requires Vrui version 14.0 build 001 or newer. To read images in PNG, JPEG, or TIFF formats, libpng, libjpeg, or libtiff have to be installed, respectively, and Vrui has to be configured with support for these image formats (see [Vrui's documentation](https://github.com/vrui-vr/vrui/blob/main/docs/installation/index.md)). To include collaboration functionality, 3D Visualizer requires the Vrui Collaboration Infrastructure version 10.3 or newer.
 
 It is recommended to download or move the source packages for Vrui and 3D Visualizer into a src directory underneath the user's home directory. Otherwise, references to ~/src in the following instructions need to be changed.
 
@@ -12,36 +12,33 @@ It is also recommended to skip optional steps 4 and 6 in the following instructi
 
 0. Install Vrui by running: 
 
-    ```
+    ```sh
     ~/src/Vrui-<version>-<build>
     ``` 
 
-    ???+ tip
-        Refer to [Vrui's README file.](https://github.com/vrui-vr/vrui/blob/main/README)
-
 1. Change into the `~/src` directory and unpack the 3D Visualizer tarball in one of the two following ways:
 
-    ```
+    ```sh
     cd ~/src
     tar xfz <download path>/3DVisualizer-<version>.tar.gz
     ```
 
     Or:
 
-    ```
+    ```sh
     cd ~/src
     tar xf <download path>/3DVisualizer-<version>.tar
     ```
 
 2. Change into 3D Visualizer base directory:
     
-    ```
+    ```sh
     cd 3DVisualizer-<version>
     ```
 
 3. If the Vrui version installed in step 0 was not 14.0, or Vrui's installation directory was changed from the default of `/usr/local`, adapt the makefile using a text editor. Change the value of `VRUI_MAKEDIR` close to the beginning of the file as follows:
     
-    ```
+    ```sh
     VRUI_MAKEDIR := <Vrui install dir>/share/make
     ```
 
@@ -56,19 +53,19 @@ It is also recommended to skip optional steps 4 and 6 in the following instructi
 
 5. Build 3D Visualizer by running:
     
-    ```
+    ```sh
     make
     ```
 
 6. *Optional:* Install 3D Visualizer in the selected target location. This is only necessary if the `INSTALLDIR` variable in the makefile was changed. By default, 3D Visualizer can be run from its base directory. To install, either run:
 
-    ```
+    ```sh
     make install
     ```
 
     Or, if the target location is a system directory:
 
-    ```
+    ```sh
     sudo make install
     ```
 
@@ -76,25 +73,25 @@ It is also recommended to skip optional steps 4 and 6 in the following instructi
 
     - Using csh or tcsh, run either: 
 
-        ```
+        ```sh
         setenv PATH ${PATH}:~/src/3DVisualizer-<version>/bin
         ```
 
         Or, with <INSTALLDIR> as the target location set in the makefile: 
 
-        ```
+        ```sh
         setenv PATH ${PATH}:<INSTALLDIR>/bin
         ```
 
     - Using bash:
 
-        ```
+        ```sh
         export PATH=${PATH}:~/src/3DVisualizer-<version>/bin
         ```
 
         Or: 
 
-        ```
+        ```sh
         export PATH=${PATH}:<INSTALLDIR>/bin
         ```
         

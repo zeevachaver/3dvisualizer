@@ -22,6 +22,6 @@ Science Foundation.
 <!-- Right now, can only test locally if I comment out the gh-admonitions plugin in docs/mkdocs.base.yml -->
 
 ---
-<!-- **Documentation:** [vrui-vr/3dvisualizer/docs](https://github.com/vrui-vr/3dvisualizer/docs)  -->
+**Documentation:** [vrui-vr/3dvisualizer/docs](https://github.com/vrui-vr/3dvisualizer/docs) 
 
 **Source code:** [vrui-vr/3dvisualizer](https://github.com/vrui-vr/3dvisualizer) 
