@@ -1,0 +1,8 @@
+3D Visualizer:
+  - 3D Visualizer Overview: index.md
+  - Getting started: 
+    - Installation: 
+      - "Installation Guide": installation/install.md 
+    - Example: 
+      - "Running 3D Visualizer": installation/example.md 
+  - 3D Visualizer in action: in_action.md
