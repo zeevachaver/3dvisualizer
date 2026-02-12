@@ -1,4 +1,4 @@
-# Check out the 3D Visualizer in action!
+# Check out 3D Visualizer in action!
 
 ## Videos 
 
